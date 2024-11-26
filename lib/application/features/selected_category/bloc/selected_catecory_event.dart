@@ -8,3 +8,9 @@ class GetSelectedCatecoryMealItomsEvent extends SelectedCatecoryEvent {
 
   GetSelectedCatecoryMealItomsEvent({required this.selectedCatecoryName});
 }
+
+class GetMealDetailsEvent extends SelectedCatecoryEvent {
+  final String id;
+
+  GetMealDetailsEvent({required this.id});
+}
