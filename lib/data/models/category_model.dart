@@ -9,9 +9,9 @@ class CategoryModel extends CategoryEntity {
 
   factory CategoryModel.fromMap(Map<String, dynamic> map) {
     return CategoryModel(
-        id: map['idCategory'],
-        category: map['strCategory'],
-        image: map['strCategoryThumb'],
-        description: map['strCategoryDescription']);
+        id: map['idCategory'] as String,
+        category: map['strCategory'] as String,
+        image: map['strCategoryThumb'] as String,
+        description: map['strCategoryDescription'] as String);
   }
 }

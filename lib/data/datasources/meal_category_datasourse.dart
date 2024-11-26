@@ -16,8 +16,8 @@ class MealCategoryDatasourseImpl implements MealCategoryDatasourse {
       final response = await dio.get(categoryUrl);
       if (response.statusCode == 200) {
         log('Api call successfull');
-        final List<dynamic> data = response.data as List<dynamic>;
-
+        final List<dynamic> data = response.data['categories'] as List<dynamic>;
+        log(data.toString());
         final List<CategoryModel> categories = data
             .map((category) =>
                 CategoryModel.fromMap(category as Map<String, dynamic>))
@@ -27,7 +27,7 @@ class MealCategoryDatasourseImpl implements MealCategoryDatasourse {
         throw Exception('Api call filed');
       }
     } catch (e) {
-      throw Exception('some error happend');
+      throw Exception('some error happend $e');
     }
   }
 }

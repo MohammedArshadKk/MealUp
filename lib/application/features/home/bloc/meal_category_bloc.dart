@@ -17,6 +17,7 @@ class MealCategoryBloc extends Bloc<MealCategoryEvent, MealCategoryState> {
   FutureOr<void> getMealCategoryEvent(
       GetMealCategoryEvent event, Emitter<MealCategoryState> emit) async {
     try {
+      emit(LoadingState());
       final categories = await MealCategoriesUsecase().getMealCategories();
       emit(MealCategoryLoadedState(categories: categories));
     } catch (e) {
