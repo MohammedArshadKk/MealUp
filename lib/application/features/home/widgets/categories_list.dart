@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meal_up/application/core/utils/colors.dart';
-import 'package:meal_up/application/core/widgets/custom_container.dart';
 import 'package:meal_up/application/core/widgets/custom_text.dart';
 import 'package:meal_up/application/features/home/bloc/meal_category_bloc.dart';
 import 'package:meal_up/application/features/home/widgets/catecory_widget.dart';

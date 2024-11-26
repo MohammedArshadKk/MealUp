@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-# meal_up
+MealUp 🍽️
+MealApp is a Flutter application that lets users explore a variety of meals fetched from an external API. It is built using Flutter with BLoC state management and follows the Clean Architecture principles for scalable and maintainable code. The app integrates the dio package for efficient API handling.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# MealUp
->>>>>>> 23f0189c818a6b91611873dfc2d8a2ef0eb947ae

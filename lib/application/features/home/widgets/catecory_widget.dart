@@ -10,7 +10,7 @@ class CatecoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomContainer(
-      height: 210,
+      height: 220,
       width: double.infinity,
       borderRadius: BorderRadius.circular(10),
       borderColor: Border.all(color: AppColors.lightTextColor),
