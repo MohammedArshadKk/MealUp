@@ -5,11 +5,10 @@ import 'package:meal_up/application/core/widgets/custom_container.dart';
 import 'package:meal_up/application/core/widgets/custom_text.dart';
 import 'package:meal_up/application/features/selected_category/bloc/selected_catecory_bloc.dart';
 import 'package:meal_up/application/features/selected_category/meal_details_screen.dart';
-import 'package:meal_up/domain/entities/selected_catecory_meal_entity.dart';
 
 class ItomWidget extends StatelessWidget {
   const ItomWidget({super.key, required this.itom});
-  final SelectedCatecoryMealEntity itom;
+  final dynamic itom;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class ItomWidget extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => BlocProvider(
-            create: (context) => SelectedCatecoryBloc(), 
+            create: (context) => SelectedCatecoryBloc(),
             child: MealDetailsScreen(id: itom.id),
           ),
         ));

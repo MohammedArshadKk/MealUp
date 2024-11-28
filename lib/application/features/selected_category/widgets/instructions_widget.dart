@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meal_up/application/core/utils/colors.dart';
 import 'package:meal_up/application/core/widgets/custom_text.dart';
 
 class InstructionsWidget extends StatelessWidget {

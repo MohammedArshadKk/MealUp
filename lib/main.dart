@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:meal_up/application/features/home/bloc/meal_category_bloc.dart';
 import 'package:meal_up/application/features/home/home.dart';
 import 'package:meal_up/theme.dart';
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: appTheme(),
       home: BlocProvider(
         create: (context) => MealCategoryBloc(),
-        child: HomeScreen(),
+        child: const HomeScreen(),
       ),
     );
   }

@@ -12,13 +12,13 @@ class MealModel extends MealEntity {
 
   factory MealModel.fromMap(Map<String, dynamic> map) {
     return MealModel(
-      id: map['idMeal'],
-      name: map['strMeal'],
-      category: map['strCategory'],
-      area: map['strArea'],
-      instructions: map['strInstructions'],
-      image: map['strMealThumb'],
-      source: map['strSource'],
+      id: map['idMeal'] ?? '',
+      name: map['strMeal'] ?? '',
+      category: map['strCategory'] ?? '',
+      area: map['strArea'] ?? '',
+      instructions: map['strInstructions'] ?? '',
+      image: map['strMealThumb'] ?? '',
+      source: map['strSource'] ?? '',
     );
   }
 }

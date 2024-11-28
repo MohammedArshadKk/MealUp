@@ -5,3 +5,5 @@ String filterbyCategoryUrl =
 
 String fullMalDetailsUrl =
     'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
+
+String searchUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
